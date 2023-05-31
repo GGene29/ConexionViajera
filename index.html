@@ -11,8 +11,15 @@
             tailwind.config = {
             theme: {
                 extend: {
+                
                 colors: {
-                    clifford: '#2ECC71',
+                    cliffor: '#2ECC71',
+                    onecolor: '#48AF5F',
+                    secondcolor: '#121212',
+                    grey: '#2E2E2E',
+                    blue: '#0069B6',
+                    white: '#EDEDED',
+                    efecto: 'drop-shadow(0 22px 50px rgb(0 105 182 /26%))',
                 }
                 }
             }
@@ -33,24 +40,26 @@
                 </ul>
             </nav>
         </header>
-        <main>    
+        <main class="bg-white">    
             <section>
-                <div>
-                    <h1 class="text-3xl font-bold underline">TURISMO</h1>
-                    <h1 class="text-3xl font-bold underline text-clifford">ECOLÓGICO</h1>
+                <div class="">
+                    <h1 class="text-3xl font-bold underline text-secondcolor">TURISMO</h1>
+                    <h1 class="text-3xl font-bold underline text-onecolor">ECOLÓGICO</h1>
+                </div>
+                <div class="space-y-5 bg-blue">    
+                    <div class="bg-secondcolor text-white">
+                        <img src="#" alt="Arbolito">
+                        <h3>Ecologia</h3>
+                    </div>
+                    <div class="text-onecolor shadow-lg bg-white">
+                        <img src="#" alt="Manos">
+                        <h3>Compromiso</h3>
+                    </div>
+                    <div class="text-onecolor shadow-lg bg-white">
+                        <img src="#" alt="Bombillos">
+                        <h3 class="text-onecolor bg-grey hover:bg-blue hover:text-white">Innovación</h3>
+                    </div>
                 </div>    
-                <div>
-                    <img src="#" alt="Arbolito">
-                    <h3 class="text-clifford">Ecologia</h3>
-                </div>
-                <div>
-                    <img src="#" alt="Manos">
-                    <h3 class="text-clifford">Compromiso</h3>
-                </div>
-                <div>
-                    <img src="#" alt="Bombillos">
-                    <h3 class="text-clifford">Innovación</h3>
-                </div>
             </section>
             <section>
                 <div>
@@ -65,11 +74,11 @@
                 </div>
             </section>
         </main>    
-        <footer>
+        <footer class="bg-grey text-white">
             <div>
                 <div>
                     <p>CONOCE TU <br>PRÓXIMO</p> 
-                    <p class="text-clifford">DESTINO</p>
+                    <p class="text-onecolor">DESTINO</p>
                 </div>
                 <div>
                     <a href="#">Facebook</a> <br>
