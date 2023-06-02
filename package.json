@@ -9,7 +9,7 @@
 		"client": "cd client && npm run dev",
 		"server-install": "npm install",
 		"client-install": "cd client && npm install",
-		"install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+		"install-all": "npm install && cd client && npm install",
 		"dev": "concurrently \"npm run api\" \"npm run client\"",
 		"render-build": "npm install && cd client && npm install && npm run build"
 	},
