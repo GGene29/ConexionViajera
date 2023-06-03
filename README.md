@@ -60,11 +60,11 @@ GET /api/reviews
 ```js
 {
 	"status": 200,
-	"success": true
+	"success": true,
 	"content": [
 		{
 			"name": "Jonaiker Jaspes",
-			"location": "Estado Aragua, Venezuela"
+			"location": "Estado Aragua, Venezuela",
 			"review": "Fino 👍"
 		},
 		// ...
@@ -94,12 +94,12 @@ POST /api/reviews
 ```js
 {
 	"status": 200,
-	"success": true
+	"success": true,
 	"content": [
 		{
-		"name": "Génesis Sumoza",
-		"location": "Distrito Federal, Venezuela",
-		"review": "Malo 👎"
+			"name": "Génesis Sumoza",
+			"location": "Distrito Federal, Venezuela",
+			"review": "Malo 👎"
 		}
 	]
 }
