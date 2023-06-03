@@ -2,11 +2,7 @@
 
 <h4 align="center">Esta es una página web desarrollada para la empresa Conexión Viajera, dedicada a la Publicidad Turística en el Municipio Juan German Roscio en San Juan de los Morros.</h4>
 
-<br/>
-
 ### Estructura de carpetas
-
-<br/>
 
 ```bash
 ├──ConexionViajera (root)
@@ -18,29 +14,20 @@
 │  ├── routes
 ```
 
-<br/>
-
 ### 👨‍💻👩‍💻 Para desarrolladores
 
-<br/>
-
 * Asegúrense estar posicionados en el root del proyecto: `./conexionviajera/`
-
-<br/>
 
 * Para instalar todas las dependencias, usen el comando:
   ```
   npm run install-all
   ```
 
-<br/>
-
 * Una vez instaladas las dependencias, deben iniciar el proyecto con el comando:
 
 	```
 	npm run dev
 	```
-<br/>
 
 ### 🏓 La API
 
