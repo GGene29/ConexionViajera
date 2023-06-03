@@ -50,7 +50,7 @@ Por defecto el **puerto** del servidor es `8080` en el modo `development`, pero 
 
 El archivo `vite.config.js` ya esta configurado para redireccionar todas las consultas `HTTP` a la dirección URL `http://localhost:8080` que pasen por el endpoint:
 
-```http
+```js
 /api
 ```
 
@@ -66,28 +66,24 @@ Obtener todos los comentarios existentes.
 
 La manera de hacerlo sería la siguiente:
 
-<div style="background-color: #202329; padding: 2em; border-radius: 6px 6px 0 0; color: #abb2bf;">
-	<span style="padding-right: .5em; color: #4cff8f; font-weight: 700; user-select: none">GET</span>
-	<span>/api/reviews</span>
-</div>
+```js
+GET /api/reviews
+```
 
-<div style="background-color: #202329; padding: 2em; border-radius: 0 0 6px 6px; color: #abb2bf; margin-top: 2px;">
-	<span>
-		<p style="margin:0;padding:0;">{</p>
-			<p style="margin:0;padding:0;padding-left: 1em;"><span style="color: #ff79c6;">"status"</span>: <span style="color: #f08d49;">200</span>,</p>
-			<p style="margin:0;padding:0;padding-left: 1em;"><span style="color: #ff79c6;">"success"</span>: <span style="color: #66d9ef;">true</span>,</p>
-			<p style="margin:0;padding:0;padding-left: 1em;">
-				<span style="color: #ff79c6;">"content"</span>: [
-					<p style="margin:0;padding:0;padding-left: 2em;">{</p>
-						<p style="margin:0;padding:0;"><span style="color: #ff79c6; padding-left: 3em;">"name"</span>: <span style="color: #4cff8f;">"Jonaiker Jaspes"</span>,</p>
-						<p style="margin:0;padding:0;"><span style="color: #ff79c6; padding-left: 3em;">"location"</span>: <span style="color: #4cff8f;">"Estado Aragua, Venezuela"</span>,</p>
-						<p style="margin:0;padding:0;"><span style="color: #ff79c6; padding-left: 3em;">"review"</span>: <span style="color: #4cff8f;">"Fino 👍"</span></p>
-					<p style="margin:0;padding:0;padding-left: 2em;">},</p>
-					<span style="margin:0;padding:0;padding-left: 2em;">// ...</span>
-				<p style="margin:0;padding:0;padding-left: 1em;">]</p>
-		<p style="margin:0;padding:0;">}</p>
-	</span style="margin:0;padding:0;">
-</div>
+```js
+{
+	"status": 200,
+	"success": true
+	"content": [
+		{
+			"name": "Jonaiker Jaspes",
+			"location": "Estado Aragua, Venezuela"
+			"review": "Fino 👍"
+		},
+		// ...
+	]
+}
+```
 
 ##### POST
 
@@ -97,34 +93,27 @@ Enviar a la base de datos la reseña del formulario.
 
 La manera de hacerlo sería la siguiente:
 
-<div style="background-color: #202329; padding: 2em; border-radius: 6px 6px 0 0; color: #abb2bf;">
-	<span style="padding-right: .5em; color: #ffbc00; font-weight: 700; user-select: none">POST</span>
-	<span>/api/reviews</span>
-</div>
+```js
+POST /api/reviews
+```
 
-<div style="position: relative; background-color: #202329; padding: 2em; color: #abb2bf; margin-top: 2px;">
-	<p style="font-weight: 700; user-select: none; opacity: 40%">BODY</p>
-	<span>
-		<p style="margin:0;padding:0;">{</p>
-			<p style="margin:0;padding:0;padding-left: 1em;"><span style="color: #ff79c6;">"name"</span>: <span style="color: #4cff8f;">"Génesis Sumoza"</span>,</p>
-			<p style="margin:0;padding:0;padding-left: 1em;"><span style="color: #ff79c6;">"review"</span>: <span style="color: #4cff8f;">"Malo 👎"</span>
-		<p style="margin:0;padding:0;">}</p>
-	</span style="margin:0;padding:0;">
-</div>
+```js
+{
+	"name": "Génesis Sumoza",
+	"review": "Malo 👎"
+}
+```
 
-<div style="background-color: #202329; padding: 2em; border-radius: 0 0 6px 6px; color: #abb2bf; margin-top: 2px;">
-	<span>
-		<p style="margin:0;padding:0;">{</p>
-			<p style="margin:0;padding:0;padding-left: 1em;"><span style="color: #ff79c6;">"status"</span>: <span style="color: #f08d49;">200</span>,</p>
-			<p style="margin:0;padding:0;padding-left: 1em;"><span style="color: #ff79c6;">"success"</span>: <span style="color: #66d9ef;">true</span>,</p>
-			<p style="margin:0;padding:0;padding-left: 1em;">
-				<span style="color: #ff79c6;">"content"</span>: [
-					<p style="margin:0;padding:0;padding-left: 2em;">{</p>
-						<p style="margin:0;padding:0;"><span style="color: #ff79c6; padding-left: 3em;">"name"</span>: <span style="color: #4cff8f;">"Génesis Sumoza"</span>,</p>
-						<p style="margin:0;padding:0;"><span style="color: #ff79c6; padding-left: 3em;">"location"</span>: <span style="color: #4cff8f;">"Distrito Federal, Venezuela"</span>,</p>
-						<p style="margin:0;padding:0;"><span style="color: #ff79c6; padding-left: 3em;">"review"</span>: <span style="color: #4cff8f;">"Malo 👎"</span></p>
-					<p style="margin:0;padding:0;padding-left: 2em;">}</p>
-				<p style="margin:0;padding:0;padding-left: 1em;">]</p>
-		<p style="margin:0;padding:0;">}</p>
-	</span style="margin:0;padding:0;">
-</div>
+```js
+{
+	"status": 200,
+	"success": true
+	"content": [
+		{
+		"name": "Génesis Sumoza",
+		"location": "Distrito Federal, Venezuela",
+		"review": "Malo 👎"
+		}
+	]
+}
+```
