@@ -123,12 +123,10 @@ POST /api/reviews
 {
   "status": 200,
   "success": true,
-  "content": [
-    {
-      "name": "Génesis Sumoza",
-      "location": "Distrito Federal, Venezuela",
-      "review": "Malo 👎"
-    }
-  ]
+  "content": {
+    "name": "Génesis Sumoza",
+    "location": "Distrito Federal, Venezuela",
+    "review": "Malo 👎"
+  }
 }
 ```
