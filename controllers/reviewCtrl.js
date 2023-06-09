@@ -4,7 +4,7 @@ const axios = require("axios").default;
 const reviewCtrl = {
 	getReviews: async (req, res) => {
 		try {
-			const reviews = await Review.find();
+			const reviews = await Review.find().select("-_id -__v");
 
 			if (reviews.length < 1) {
 				const error = {
