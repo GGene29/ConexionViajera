@@ -1,34 +1,20 @@
-import { useState } from 'react';
-import './App.css';
+import "./styles.css";
+import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Home from "./routes/Home";
+import About from "./routes/About";
+import Service from "./routes/Service";
+import Contact from "./routes/Contact";
 
-function App() {
-	const [count, setCount] = useState(0);
-
-	return (
-		<>
-			<h2>Esta es una prueba</h2>
-			<div>
-				<a href="https://vitejs.dev" target="_blank" rel='noreferrer'>
-
-				</a>
-				<a href="https://react.dev" target="_blank" rel='noreferrer'>
-
-				</a>
-			</div>
-			<h1>Vite + React</h1>
-			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.jsx</code> and save to test HMR
-				</p>
-			</div>
-			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
-			</p>
-		</>
-	);
-};
-
-export default App;
+export default function App() {
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </div>
+  );
+}
