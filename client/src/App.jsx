@@ -1,5 +1,12 @@
 import { useState } from 'react';
 import './App.css';
+import Goals from './components/Goals';
+import Target from './components/Target';
+import Founders from './components/Founders';
+import Content from './components/Content';
+import Footer from './components/Footer';
+import Nav from './components/Nav';
+import Header from './components/Header';
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -8,24 +15,26 @@ function App() {
 		<>
 			<h2>Esta es una prueba</h2>
 			<div>
-				<a href="https://vitejs.dev" target="_blank" rel='noreferrer'>
-
-				</a>
-				<a href="https://react.dev" target="_blank" rel='noreferrer'>
-
-				</a>
+				<Nav />
 			</div>
-			<h1>Vite + React Modificando todo</h1>
+			<div>
+				<Header />
+			</div>
 			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.jsx</code> and save to test HMR
-				</p>
+				<Goals />
 			</div>
+			<div className="card">
+				<Target />
+			</div><div className="card">
+				<Founders />
+			</div><div className="card">
+				<Content />
+			</div><div className="card">
+				<Footer />
+			</div>
+
 			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
+				Te gusta lo que ves?
 			</p>
 		</>
 	);
