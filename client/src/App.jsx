@@ -21,15 +21,18 @@ function App() {
 				<Header />
 			</div>
 			<div className="card">
+				<Target />
+			</div>
+			<div className="card">
 				<Goals />
 			</div>
 			<div className="card">
-				<Target />
-			</div><div className="card">
 				<Founders />
-			</div><div className="card">
+			</div>
+			<div className="card">
 				<Content />
-			</div><div className="card">
+			</div>
+			<div className="card">
 				<Footer />
 			</div>
 
