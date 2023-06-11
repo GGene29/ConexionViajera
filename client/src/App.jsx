@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Nav from './components/Nav';
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ function App() {
 
 				</a>
 			</div>
+			<Nav />
 			<h1>Vite + React</h1>
 			<div className="card">
 				<button onClick={() => setCount((count) => count + 1)}>
