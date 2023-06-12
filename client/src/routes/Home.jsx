@@ -1,8 +1,8 @@
-import Destination from "../components/Destination";
-import Footer from "../components/Footer";
+// import Destination from "../components/Destination";
+// import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-import Trip from "../components/Trip";
+// import Trip from "../components/Trip";
 import HomeImg from "../assets/Sanjuan.jpg";
 
 function Home() {
