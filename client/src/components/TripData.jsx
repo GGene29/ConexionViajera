@@ -1,9 +1,14 @@
 import "./TripStyles.css";
+import Trip from "./Trip";
 
 function TripData(props) {
   return (
     <div className="t-card">
-      <h1>Your Code Here</h1>
+      <div className="t-image">
+        <img src={props.image} alt="" />
+      </div>
+      <h4>{props.heading}</h4>
+      <p>{props.text}</p>
     </div>
   );
 }

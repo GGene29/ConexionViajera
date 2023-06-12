@@ -1,13 +1,21 @@
-// import Hero from "../components/Hero";
-// import Navbar from "../components/Navbar";
-// import AboutImg from "../assets/night.jpg";
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import AboutImg from "../assets/10.jpg";
 // import Footer from "../components/Footer";
 // import Trip from "../components/Trip";
 
 function Service() {
   return (
     <>
-      <h1>This is Service</h1>
+      <Navbar />
+      <Hero
+        cName="hero-mid"
+        heroImg={AboutImg}
+        title="Servicio"
+    
+
+        btnClass="hide"
+      />
     </>
   );
 }
