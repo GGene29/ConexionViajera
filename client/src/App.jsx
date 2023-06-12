@@ -13,13 +13,10 @@ function App() {
 
 	return (
 		<>
-			<h2>Esta es una prueba</h2>
 			<div>
 				<Nav />
-			</div>
-			<div>
 				<Header />
-			</div>
+			</div>			
 			<div className="card">
 				<Target />
 			</div>
@@ -36,9 +33,6 @@ function App() {
 				<Footer />
 			</div>
 
-			<p className="read-the-docs">
-				Te gusta lo que ves?
-			</p>
 		</>
 	);
 };
