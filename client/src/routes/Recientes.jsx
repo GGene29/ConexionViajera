@@ -1,24 +1,24 @@
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-import AboutImg from "../assets/10.jpg";
+import AboutImg from "../assets/42.jpg";
  import Footer from "../components/Footer";
-import Trip from "../components/Trip";
+import Trips from "../components/Trips";
 
 
-function Service() {
+function Recientes() {
   return (
     <>
       <Navbar />
       <Hero
         cName="hero-mid"
         heroImg={AboutImg}
-        title="Servicio"
+        title="Recientes"
         btnClass="hide"
       />
-      <Trip/>
-<Footer/>
+      <Trips/>
+      <Footer/>
     </>
   );
 }
 
-export default Service;
+export default Recientes;

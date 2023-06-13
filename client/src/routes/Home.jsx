@@ -1,10 +1,10 @@
 // import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-// import Trip from "../components/Trip";
 import HomeImg from "../assets/Sanjuan.jpg";
 import Destination from "../components/Destination";
 import Trip from "../components/Trip";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -16,11 +16,12 @@ function Home() {
         title="Tu viaje Tu historia"
         text="Elige tu destino favorito."
         buttonText="Plan de Viaje"
-        url="/"
+        url="/recientes"
         btnClass="show"
       />
       <Destination/>
-        <Trip/>
+      <Trip />
+      <Footer/>
     </>
   );
 }
