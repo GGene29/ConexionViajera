@@ -5,7 +5,7 @@ function Nav() {
         <div>
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
                     <div>
-                        <img src="#" alt="Logo"/>
+                        <img src="/public/img/Sanjuan.jpeg" alt="Logo" className="w-1/12"/>
                     </div>
                     <div className="flex my-auto p-2">
                         <a href="#" className="mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900  hover:text-green-500 hover:underline">INICIO</a> 

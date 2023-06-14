@@ -2,10 +2,10 @@
 
 function Footer() {
     return (
-        <div className='bg-gray-900'>
+        <div className='bg-black'>
             <footer className="px-5 py-5">
                 <div className='flex justify-between'>
-                    <div className="font-bold text-gray-100">
+                    <div className="font-bold text-gray-100 text-3xl">
                         <p>CONOCE TU <br/>PRÓXIMO<span className="text-green-500"> DESTINO</span></p> 
                     </div>
                     <div className="flex justify-around text-gray-100 w-24">
