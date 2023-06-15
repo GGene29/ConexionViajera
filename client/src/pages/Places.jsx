@@ -36,13 +36,13 @@ const Places = () => {
 
                         <div className="w-full text-white text-6xl font-bold">
                             <h2>
-                                Lorem Ipsum
+                                Los Morros
                             </h2>
                         </div>
 
                         <div className="w-full text-white">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia libero ut magni blanditiis saepe dolore doloremque quos similique magnam quo, dolorum repudiandae animi, possimus, ullam sed odit. A, modi ipsum?
+                            El Monumento Natural Arístides Rojas, conocido como Los Morros de San Juan, es un sistema de roca caliza formado por la deposición de sedimentos marinos ubicado en los alrededores de San Juan de los Morros.
                             </p>
                         </div>
                     </div>

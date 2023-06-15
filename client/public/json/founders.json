@@ -11,22 +11,32 @@
     },
     {
         "id":3,
-        "nombre": "José Marquez",
+        "nombre": "Keving Andradres",
         "rol": "COO o Director Operaciones"
     },
     {
         "id":4,
-        "nombre": "Kevin Andrades",
-        "rol": "Programador Web Fullstack"
+        "nombre": "José Márquez",
+        "rol": "Departamento de Investigación y Análisis"
     },
     {
         "id":5,
         "nombre": "Jonaiker Jaspe",
-        "rol": "Diseñador Gráfico"
+        "rol": "Departamento de Tecnología de la Información"
     },
     {
         "id":6,
-        "nombre": "Wilmer Caldera",
-        "rol": "Tutor"
+        "nombre": "Jose Sumoza",
+        "rol": "Departamento de Marketing"
+    },
+    {
+        "id":7,
+        "nombre": "Juan Valera",
+        "rol":"Departamento de Marketing" 
+    },
+    {
+        "id":8,
+        "nombre":"Wilmer Caldera",
+        "rol":"Tutor"
     }
 ]
