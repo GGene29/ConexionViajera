@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-
+import { DataProvider } from './GlobalState';
 import './App.css';
 import Home from './pages/Home.jsx';
 import PrincipalLayout from './layouts/PrincipalLayout.jsx';
@@ -12,14 +12,16 @@ function App() {
 	return (
 		<>
 			<BrowserRouter>
-				<Routes>
-					<Route path="/" element={<PrincipalLayout/>}>
-						<Route index element={<Home/>}/>
-						<Route path='acerca-de' element={<About/>}/>
-						<Route path='sitios' element={<Places/>}/>
-						<Route path='resenas' element={<Reviews/>}/>
-					</Route>
-				</Routes>
+				<DataProvider>
+					<Routes>
+						<Route path="/" element={<PrincipalLayout/>}>
+							<Route index element={<Home/>}/>
+							<Route path='about' element={<About/>}/>
+							<Route path='sites' element={<Places/>}/>
+							<Route path='reviews' element={<Reviews/>}/>
+						</Route>
+					</Routes>
+				</DataProvider>
 			</BrowserRouter>
 		</>
 	);

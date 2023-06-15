@@ -19,17 +19,17 @@ function Nav() {
                                 INICIO
                         </Link>
                         <Link 
-                            to={'/acerca-de'} 
+                            to={'/about'} 
                             className="transition-all mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-green-500 hover:underline">
                                 ACERCA DE
                         </Link>
                         <Link 
-                            to={'/sitios'} 
+                            to={'/sites'} 
                             className="transition-all mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-green-500 hover:underline">
                                 SITIOS
                         </Link>
                         <Link 
-                            to={'/resenas'} 
+                            to={'/reviews'} 
                             className="transition-all mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-green-500 hover:underline">
                                 RESEÑAS
                         </Link>
