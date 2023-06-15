@@ -3,9 +3,20 @@ function Goals() {
 
     return (
         <>
-            <section className="container p-10 m-5 w-full h-1/2 flex justify-between">
-                <p className="font-bold w-10/12 m-5 text-justify">  <h2 className="text-xl">Misión</h2> <br/>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quidem unde necessitatibus ipsam? Reprehenderit quaerat voluptatibus inventore ipsa, explicabo asperiores magnam iure, possimus odit, similique vel? Aut dignissimos tempore earum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iure accusamus quaerat repellendus eos natus praesentium reprehenderit, molestiae dolorem voluptas temporibus ipsa ab, libero modi ducimus aspernatur similique a odit?</p>
-                <img src="./src/assets/img/descarga.jpeg" alt="misión" className="w-1/2 m-5 shadow-stone-600 rounded-md"/>
+            <section className="container p-10 m-2 w-full h-1/2 flex justify-evenly">
+
+                <div className="w-2/5 m-5 text-justify">
+                    <h2 className="font-bold text-5xl border-blue-700 border-b-4 w-40">MISIÓN</h2>
+                    <p className="mt-5 text-xl">
+                        Ofrecer experiencias de turismo ecológico de calidad y
+                        responsabilidad en el municipio Juan Germán Roscio,
+                        contribuyendo a la conservación de la biodiversidad, el respeto
+                        a las culturas locales y el fomento de la economía social y
+                        solidaria.
+                    </p>
+                </div>
+
+                <img src="/public/img/mision.jpeg" alt="misión" className="w-2/5 h-80 m-2 shadow-stone-600 shadow-lg rounded-lg"/>
             </section>
         </>
     )

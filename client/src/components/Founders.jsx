@@ -1,17 +1,27 @@
+import { useEffect, useState } from "react"
+import FounderCard from "./FounderCard"
 
 function Founders() {
+    
+    const [founders, setFounders] = useState([])
+
+    useEffect(() => {
+        const searchFounders = () => {
+            fetch('/public/json/founders.json')
+                .then(data => data.json())
+                .then(res => setFounders(res))
+                .catch(err => console.log(err))
+            
+        }
+
+        searchFounders();
+    }, [])
+
     return (
         <>
-            <section className="container flex justify-around">
-                <div className="grid grid-cols-2 gap-32">    
-                    <div>   
-                        <img src="./src/assets/img/descarga.jpeg" alt="misión" className="w-1/2 m-5 shadow-stone-600 rounded-full"/> 
-                        <p className="font-bold">  <h2 className="text-xl">Nombre Apellido</h2> <br/> Función o Roll en la Empresa</p>
-                    </div>
-                    <div>   
-                        <img src="./src/assets/img/descarga.jpeg" alt="misión" className="w-1/2 m-5 shadow-stone-600 rounded-full"/> 
-                        <p className="font-bold">  <h2 className="text-xl">Nombre Apellido</h2> <br/> Función o Roll en la Empresa</p>
-                    </div>
+            <section className="container flex justify-around my-5">
+                <div className="grid grid-cols-2 gap-32 my-5">    
+                    { founders.map( founder => <FounderCard key={founder.id} nombre={founder.nombre} rol={founder.rol}/>)}
                 </div>
             </section>
         </>

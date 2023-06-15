@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "nombre": "Génesis Sumoza",
+        "rol": "CEO o Director Ejecutivo"
+    },
+    {
+        "id":2,
+        "nombre": "Daniel de Freitas",
+        "rol": "CfO o Director Financiero"
+    },
+    {
+        "id":3,
+        "nombre": "José Marquez",
+        "rol": "COO o Director Operaciones"
+    },
+    {
+        "id":4,
+        "nombre": "Kevin Andrades",
+        "rol": "Programador Web Fullstack"
+    },
+    {
+        "id":5,
+        "nombre": "Jonaiker Jaspe",
+        "rol": "Diseñador Gráfico"
+    },
+    {
+        "id":6,
+        "nombre": "Wilmer Caldera",
+        "rol": "Tutor"
+    }
+]

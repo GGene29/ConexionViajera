@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "title": "Los Morros",
+        "description": "",
+        "img": "/public/img/places/morros.jpg"
+    },
+    {
+        "id":2,
+        "title": "Casa de la Cultura",
+        "description": "",
+        "img": "/public/img/places/casa-cultura.jpg"
+    },
+    {
+        "id":3,
+        "title": "El Castrero",
+        "description": "",
+        "img": "/public/img/places/castrero.jpg"
+    },
+    {
+        "id":4,
+        "title": "Hotel y Spa Baños Termales",
+        "description": "",
+        "img": "/public/img/places/hotel-banos-termales.jpg"
+    },
+    {
+        "id":5,
+        "title": "Monumento San Juanote",
+        "description": "",
+        "img": "/public/img/places/monumento-san-juan.jpeg"
+    },
+    {
+        "id":6,
+        "title": "Ciudad Olimpica | Villa Olimpica",
+        "description": "",
+        "img": "/public/img/places/villa-olimpica.jpg"
+    }
+]
