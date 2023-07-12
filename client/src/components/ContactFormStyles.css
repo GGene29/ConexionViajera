@@ -17,6 +17,20 @@
   border-radius: .3rem;
   border: 1px solid #2a2a2a;
 }
+.from-container select {
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: .2rem;
+  border-radius: .3rem;
+  border: 1px solid #2a2a2a;
+}
+.from-container option {
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: .2rem;
+  border-radius: .3rem;
+  border: 1px solid #2a2a2a;
+}
 
 .from-container textarea {
   padding:  1rem;
@@ -28,6 +42,11 @@
 .from-container button {
   display: inline;
 }
+
+  .txt p {
+    font-size: 1rem;
+    padding: 0.5rem 0 2rem 0;
+  }
 
 @media screen  and (max-width:850px){
   .from-container {

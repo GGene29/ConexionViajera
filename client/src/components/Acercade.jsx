@@ -1,7 +1,4 @@
 import { Component } from "react";
-import Mountain1 from "../assets/2.jpg";
-import Mountain2 from "../assets/14.jpg";
-import Mountain3 from "../assets/5.jpg";
 import "./AcercadeStyles.css";
 
 class Acercade extends Component {

@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-import AboutImg from "../assets/42.jpg";
+import AboutImg from "../assets/10.jpg";
  import Footer from "../components/Footer";
 import Trips from "../components/Trips";
 
@@ -12,7 +12,7 @@ function Recientes() {
       <Hero
         cName="hero-mid"
         heroImg={AboutImg}
-        title="Recientes"
+        title="Viajes"
         btnClass="hide"
       />
       <Trips/>

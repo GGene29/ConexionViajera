@@ -18,14 +18,14 @@ export const MenuItems = [
     icon: "fa-solid fa-briefcase",
   },
   {
-    title: "Recientes",
+    title: "Viajes",
     url: "/recientes",
     cName: "nav-links",
     icon: "fa-solid fa-location-dot",
   },
   {
-    title: "Reseñas",
-    url: "/reseñas",
+    title: "Contacto",
+    url: "/contact",
     cName: "nav-links",
     icon: "fa-solid fa-comment-dots",
   },

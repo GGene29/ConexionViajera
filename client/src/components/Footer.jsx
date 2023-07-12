@@ -9,13 +9,13 @@ const Footer = () => {
           <p>Conoce tu proximo Destino.</p>
         </div>
         <div>
-          <a href="/">
+          <a href="https://www.facebook.com/profile.php?id=100093181887032">
             <i className="fa-brands fa-facebook-square"></i>
           </a>
-          <a href="/">
+          <a href="https://www.instagram.com/contactjgrcv/">
             <i className="fa-brands fa-instagram-square"></i>
           </a>
-          <a href="/">
+          <a href="https://twitter.com/contactjgrcv">
             <i className="fa-brands fa-twitter-square"></i>
           </a>
         </div>
@@ -28,14 +28,14 @@ const Footer = () => {
         </div>
         <div>
           <h4>Comunidad</h4>
-          <a href="/">Facebook</a>
-          <a href="/">Instagram</a>
-          <a href="/">Twitter</a>
+          <a href="https://www.facebook.com/profile.php?id=100093181887032">Facebook</a>
+          <a href="https://www.instagram.com/contactjgrcv/">Instagram</a>
+          <a href="https://twitter.com/contactjgrcv">Twitter</a>
         </div>
         <div>
           <h4>Comunicate</h4>
-          <a href="/">Reseñas</a>
-          <a href="/">Correo</a>
+          <a href="/contact">Contactanos</a>
+          <a href="/contact">Correo Electronico</a>
         </div>
         <div>
           <h4>Otros</h4>

@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-import AboutImg from "../assets/10.jpg";
+import AboutImg from "../assets/35.jpg";
  import Footer from "../components/Footer";
 import Trip from "../components/Trip";
 
@@ -16,7 +16,7 @@ function Service() {
         btnClass="hide"
       />
       <Trip/>
-<Footer/>
+      <Footer/>
     </>
   );
 }

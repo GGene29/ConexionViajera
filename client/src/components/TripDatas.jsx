@@ -1,5 +1,5 @@
 import "./TripStylep.css";
-import Trips from "./Trips";
+
 
 function TripDatas(props) {
   return (

@@ -1,15 +1,15 @@
-// import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
 import HomeImg from "../assets/Sanjuan.jpg";
 import Destination from "../components/Destination";
 import Trip from "../components/Trip";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+
 
 function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <Hero
         cName="hero"
         heroImg={HomeImg}
